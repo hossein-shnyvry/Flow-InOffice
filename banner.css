@@ -1,82 +1,69 @@
-/* کانتینر اصلی بنر مینیمال */
-.inoffice-minimal-banner {
+/* کانتینر اصلی: بدون بک‌گراند، بدون بردر، کوچک و دقیقا هم‌عرض چت‌باکس */
+.inoffice-micro-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(25, 25, 35, 0.85);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 235, 59, 0.2);
-  color: #FFFFFF;
-  padding: 8px 16px;
-  margin: 10px auto 0 auto;
-  width: 100%;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 6px 4px;
+  margin: 6px auto 0 auto;
   max-width: 100%;
-  border-radius: 12px;
-  font-family: inherit;
-  font-size: 12px;
   box-sizing: border-box;
+  font-family: inherit;
+  font-size: 11px;
   z-index: 9999;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* بخش وضعیت (متن و نقطه فعال) */
-.banner-status {
+/* بخش وضعیت */
+.micro-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.micro-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #FFEB3B;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(255, 235, 59, 0.6);
+}
+
+.micro-text {
+  color: #9E9E9E;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+/* بخش آیکون‌های سوشال */
+.micro-socials {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.status-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #FFEB3B;
-  border-radius: 50%;
-  box-shadow: 0 0 8px #FFEB3B;
-  animation: pulse-dot 2s infinite;
-}
-
-.status-text {
-  font-weight: 600;
-  color: #F1F1F1;
-  letter-spacing: -0.2px;
-}
-
-/* بخش آیکون‌های شبکه‌های اجتماعی */
-.banner-socials {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-link {
+.micro-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #FFEB3B;
-  transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #B0BEC5;
+  transition: all 0.2s ease;
   text-decoration: none;
 }
 
-.social-icon {
-  width: 14px;
-  height: 14px;
+.micro-icon {
+  width: 12px;
+  height: 12px;
 }
 
-/* افکت هاور تعاملی برای آیکون‌ها */
-.social-link:hover {
+/* افکت هاور ملایم روی آیکون‌ها */
+.micro-link:hover {
   background-color: #FFEB3B;
   color: #151024;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(255, 235, 59, 0.4);
-}
-
-/* انیمیشن ملایم برای نقطه وضعیت */
-@keyframes pulse-dot {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.15); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.8; }
+  transform: scale(1.1);
 }
