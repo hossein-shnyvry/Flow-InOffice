@@ -1,23 +1,82 @@
-.inoffice-flow-banner {
+/* کانتینر اصلی بنر مینیمال */
+.inoffice-minimal-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(25, 25, 35, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 235, 59, 0.2);
+  color: #FFFFFF;
+  padding: 8px 16px;
+  margin: 10px auto 0 auto;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 12px;
+  box-sizing: border-box;
+  z-index: 9999;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* بخش وضعیت (متن و نقطه فعال) */
+.banner-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #FFEB3B;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #FFEB3B;
+  animation: pulse-dot 2s infinite;
+}
+
+.status-text {
+  font-weight: 600;
+  color: #F1F1F1;
+  letter-spacing: -0.2px;
+}
+
+/* بخش آیکون‌های شبکه‌های اجتماعی */
+.banner-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  background-color: #FFEB3B;
-  color: #151024;
-  padding: 10px 16px;
-  margin: 12px auto 0 auto;
-  width: 100%;
-  max-width: 600px;
-  border-radius: 14px;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 700;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 9999;
-  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFEB3B;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 }
 
-.banner-icon {
-  font-size: 16px;
+.social-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* افکت هاور تعاملی برای آیکون‌ها */
+.social-link:hover {
+  background-color: #FFEB3B;
+  color: #151024;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(255, 235, 59, 0.4);
+}
+
+/* انیمیشن ملایم برای نقطه وضعیت */
+@keyframes pulse-dot {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
 }
