@@ -1,73 +1,71 @@
 # InOffice Flow
 
-A Chrome extension that provides exclusive access to Google Flow without changing your region. Built on top of `CFC-Flow-v1.1.0` with a redesigned InOffice UI.
+افزونه‌ای برای دسترسی اختصاصی به Google Flow بدون تغییر ریجن. ساخته شده بر پایه `CFC-Flow-v1.1.0` با رابط کاربری بازطراحی‌شده InOffice.
 
-## Features
+## ویژگی‌ها
 
-- One-click connection to Google Flow
-- Custom InOffice branding and Persian UI
-- No region change required
-- Real-time connection status feedback
+- اتصال یک‌کلیکی به Google Flow
+- رابط کاربری فارسی با برند InOffice
+- بدون نیاز به تغییر ریجن
+- بازخورد لحظه‌ای وضعیت اتصال
 
-## What's New in This Version
+## تغییرات این نسخه
 
-- Core functional files preserved as-is: `app.js`, `engine.js`, `link.js`, `panel.js`, and `stat.js`
-- Popup redesigned with InOffice styles, colors, and logo
-- Persian introduction text with links to website, Instagram, and Telegram
-- Extension name and description updated in `manifest.json`
-- Permissions, network destinations, and core execution paths preserved
+- فایل‌های عملکردی اصلی بدون تغییر باینری حفظ شده‌اند: `app.js`، `engine.js`، `link.js`، `panel.js` و `stat.js`
+- popup با استایل، رنگ‌ها و لوگوی InOffice بازطراحی شده
+- متن معرفی فارسی و سه لینک سایت، اینستاگرام و تلگرام در popup قرار گرفته‌اند
+- نام و توضیح نمایشی افزونه در `manifest.json` به InOffice تغییر کرده
+- مجوزها، مقصدهای شبکه و مسیر اجرای کد اصلی حفظ شده‌اند
 
-## Installation
+## نصب محلی در Chrome
 
-### From Source (Developer Mode)
+1. مخزن را کلون کنید یا فایل ZIP را دانلود کنید
+2. در Chrome به `chrome://extensions` بروید
+3. گزینه **Developer mode** را روشن کنید
+4. روی **Load unpacked** بزنید و پوشه پروژه را انتخاب کنید
+5. آیکون افزونه در نوار ابزار نمایش داده می‌شود
 
-1. Clone this repository or download the ZIP
-2. Open Chrome and navigate to `chrome://extensions`
-3. Enable **Developer mode** (top right toggle)
-4. Click **Load unpacked** and select the project folder
-5. The extension icon will appear in your toolbar
+## نحوه استفاده
 
-### Usage
+1. روی آیکون افزونه در نوار ابزار کلیک کنید
+2. دکمه **اتصال** را بزنید
+3. اگر تب Flow باز است، آن را بازنشانی کنید
+4. آماده استفاده از Google Flow هستید
 
-1. Click the extension icon in your toolbar
-2. Press the **Connect** button
-3. If a Flow tab is already open, reload it
-4. You're ready to use Google Flow
-
-## Project Structure
+## ساختار پروژه
 
 ```
 Flow-InOffice/
-├── app.js           # Background service worker (spec fetching, script registration)
-├── engine.js        # Core engine (obfuscated)
-├── content.js       # Content script for banner injection
-├── link.js          # Link handler (obfuscated)
-├── panel.js         # Popup panel logic
-├── stat.js          # Diagnostic status reporting
-├── panel.html       # Popup HTML
-├── panel.css        # Popup styles
-├── banner.css       # In-page banner styles
-├── info.html        # Guide page
-├── manifest.json    # Chrome extension manifest (v3)
-├── assets/          # Icons and media
-└── README.fa.md     # Persian documentation
+├── app.js           # سرویس‌ورکر پس‌زمینه (واکشی spec، ثبت اسکریپت)
+├── engine.js        # موتور اصلی (obfuscated)
+├── content.js       # اسکریپت محتوا برای تزریق بنر
+├── link.js          # مدیریت لینک‌ها (obfuscated)
+├── panel.js         # منطق پنل popup
+├── stat.js          # گزارش وضعیت تشخیصی
+├── panel.html       # HTML پنل popup
+├── panel.css        # استایل‌های پنل popup
+├── banner.css       # استایل‌های بنر درون‌صفحه‌ای
+├── info.html        # صفحه راهنما
+├── manifest.json    # مانیفست افزونه Chrome (v3)
+├── assets/          # آیکون‌ها و رسانه‌ها
+└── README.md        # مستندات فارسی
 ```
 
-## Permissions
+## مجوزها
 
-This extension requires:
-- `scripting` permission to register/unregister content scripts
-- Access to `https://flow.google.com/*` and `https://flow.cfcnode.com/*`
+این افزونه به موارد زیر نیاز دارد:
+- مجوز `scripting` برای ثبت/حذف اسکریپت‌های محتوا
+- دسترسی به `https://flow.google.com/*` و `https://flow.cfcnode.com/*`
 
-## Security Notice
+## نکته امنیتی
 
-This package does not perform functional hardening to preserve original behavior. The core engine code is obfuscated and `app.js` retains the original network destinations. This package does not constitute production security approval. Review permissions and files before installation.
+این بسته hardening عملکردی انجام نمی‌دهد تا رفتار نسخه اصلی تغییر نکند. کد هسته اصلی obfuscated است و `app.js` همچنان منطق و مقصدهای شبکه نسخه اصلی را دارد. این بسته به‌معنای تأیید امنیت تولید یا تضمین موفقیت در هر حساب/شبکه نیست. قبل از نصب، مجوزها و فایل‌های بسته را بررسی کنید.
 
-## License
+## مجوز
 
 [MIT License](LICENSE)
 
-## Author
+## نویسنده
 
 **Hossein Shnyvry**
 - [LinkedIn](https://www.linkedin.com/in/hossein-shnyvry/)
