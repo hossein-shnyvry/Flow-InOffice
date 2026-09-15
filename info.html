@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>InOffice Flow — راهنما</title>
+<style>
+  :root {
+    --page: #FFFFFF;
+    --ink: #151024;
+    --muted: #6b6580;
+    --cta: #FFEB3B;
+    --ok: #34d998;
+    --font: Tahoma, "Segoe UI", "IRANSans", Arial, sans-serif;
+    --ease-out: cubic-bezier(0.22, 1, 0.42, 1);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--page);
+    color: var(--ink);
+    font-family: var(--font);
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    max-width: 340px;
+    margin: 24px;
+    padding: 36px 28px 28px;
+    text-align: center;
+  }
+  .card img {
+    width: 56px;
+    height: 56px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background: rgba(21, 16, 36, 0.05);
+    border: 1px solid rgba(21, 16, 36, 0.08);
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .intro {
+    margin: 0 0 28px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--muted);
+  }
+  .steps { text-align: right; margin: 0 0 24px; }
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 12px 0;
+    padding: 14px 16px;
+    background: rgba(21, 16, 36, 0.03);
+    border: 1px solid rgba(21, 16, 36, 0.06);
+    border-radius: 14px;
+    transition: border-color 0.2s;
+  }
+  .step:hover { border-color: rgba(255, 235, 59, 0.4); }
+  .step-n {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #151024;
+    background: rgba(255, 235, 59, 0.25);
+    border-radius: 9px;
+    direction: ltr;
+  }
+  .step p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--muted);
+  }
+  .notice {
+    margin: 0 0 20px;
+    padding: 12px 16px;
+    font-size: 11px;
+    line-height: 1.8;
+    color: var(--muted);
+    background: rgba(21, 16, 36, 0.03);
+    border: 1px solid rgba(21, 16, 36, 0.06);
+    border-radius: 12px;
+    text-align: right;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    color: #9892a8;
+    background: rgba(21, 16, 36, 0.04);
+    border: 1px solid rgba(21, 16, 36, 0.06);
+    text-decoration: none;
+    transition: all 0.22s var(--ease-out);
+  }
+  .social-link:hover {
+    color: var(--ink);
+    background: rgba(21, 16, 36, 0.08);
+    transform: translateY(-1px);
+  }
+</style>
+</head>
+<body>
+<main class="card">
+  <img src="assets/logo.png" alt="InOffice">
+  <h1>اتصال سریع به Flow</h1>
+  <p class="intro">با یک لمس، بدون تغییر ریجن به Google Flow متصل شوید.</p>
+  <div class="steps">
+    <div class="step"><span class="step-n">۱</span><p>دکمهٔ اتصال را لمس کنید.</p></div>
+    <div class="step"><span class="step-n">۲</span><p>اگر تب Flow باز است، آن را بازنشانی کنید.</p></div>
+    <div class="step"><span class="step-n">۳</span><p>آماده استفاده از Google Flow هستید.</p></div>
+  </div>
+  <div class="notice">پیش از استفاده، مجوزها و مقصدهای شبکه را بررسی کنید.</div>
+  <div class="social">
+    <a href="https://www.linkedin.com/in/hossein-shnyvry/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="لینکدین">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://www.instagram.com/hossein_shnyvry/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="اینستاگرام">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+    <a href="https://t.me/hossein_shnyvry" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="تلگرام">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </a>
+  </div>
+</main>
+</body>
+</html>
